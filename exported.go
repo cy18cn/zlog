@@ -59,27 +59,27 @@ func Sync() error {
 
 // Infof uses fmt.Sprintf to log a templated message.
 func Infof(template string, args ...interface{}) {
-	zLog.Sugar().Infof(template, args)
+	zLog.Sugar().Infof(template, args...)
 }
 
 // Debugf uses fmt.Sprintf to log a templated message.
 func Debugf(template string, args ...interface{}) {
-	zLog.Sugar().Debugf(template, args)
+	zLog.Sugar().Debugf(template, args...)
 }
 
 // Warnf uses fmt.Sprintf to log a templated message.
 func Warnf(template string, args ...interface{}) {
-	zLog.Sugar().Warnf(template, args)
+	zLog.Sugar().Warnf(template, args...)
 }
 
 // Fatalf uses fmt.Sprintf to log a templated message.
 func Fatalf(template string, args ...interface{}) {
-	zLog.Sugar().Fatalf(template, args)
+	zLog.Sugar().Fatalf(template, args...)
 }
 
 // Errorf uses fmt.Sprintf to log a templated message.
 func Errorf(template string, args ...interface{}) {
-	zLog.Sugar().Errorf(template, args)
+	zLog.Sugar().Errorf(template, args...)
 }
 
 func GetLogger() *zap.Logger {
