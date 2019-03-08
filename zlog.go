@@ -25,8 +25,8 @@ func NewProductionLogger(appName string) (*zap.Logger, error) {
 		Dev:        false,
 		Level:      "info",
 		AppName:    appName,
-		LogFile:    "/log/log.log",
-		ErrLogFile: "/log/error.log",
+		LogFile:    "log/log.log",
+		ErrLogFile: "log/error.log",
 		MaxSize:    128,
 		MaxAge:     30,
 		MaxBackups: 30,
@@ -38,8 +38,8 @@ func NewLogger(appName string) (*zap.Logger, error) {
 		Dev:        false,
 		Level:      "debug",
 		AppName:    appName,
-		LogFile:    "/log/log.log",
-		ErrLogFile: "/log/error.log",
+		LogFile:    "log/log.log",
+		ErrLogFile: "log/error.log",
 	})
 }
 
