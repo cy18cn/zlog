@@ -15,7 +15,7 @@ func InitZapLogger() (err error)  {
 		zLog, err = NewLogger("app")
 	}
 
-	return 
+	return
 }
 
 // Info logs a message at InfoLevel. The message includes any fields passed
